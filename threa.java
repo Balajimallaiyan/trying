@@ -36,7 +36,7 @@ class cot {
     private int counter;
     public synchronized void inc (){
         counter++;
-    }
+    }// this is new line
     public int getval (){
         return counter;
     }
@@ -50,6 +50,7 @@ class exthread extends Thread{
         for(int i =0;i<1000;i++){
             c.inc();
         }
+        // this is the second line
     }
 }
 
